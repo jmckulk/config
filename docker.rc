@@ -1,0 +1,6 @@
+# Docker/Podman Related Environment Config
+
+podman_rmif () {
+	podman rmi -f $(podman images -a | grep $@ | tr -s ' ' | cut -d ' ' -f 3)
+}
+

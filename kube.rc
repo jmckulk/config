@@ -3,6 +3,14 @@
 alias k="kubectl"
 alias wk="watch kubectl"
 
+alias ka="kubectl apply"
+alias kd="kubectl delete"
+alias kpg="kubectl port-forward svc/crunchy-grafana 3000:3000"
+alias kpp="kubectl port-forward svc/crunchy-prometheus 9090:9090"
+alias kpa="kubectl port-forward svc/crunchy-alertmanager 9093:9093"
+alias kcn="kubectl config set-context $(kubectl config current-context) --namespace"
+
+
 KALIASES=(k kubectl wk)
 for ka in "${KALIASES[@]}"
 do
