@@ -1,0 +1,10 @@
+# Kubernetes Related Environment
+
+alias k="kubectl"
+alias wk="watch kubectl"
+
+KALIASES=(k kubectl wk)
+for ka in "${KALIASES[@]}"
+do
+	source <(kubectl completion bash | sed "s/kubectl/${ka?}/g")
+done

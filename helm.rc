@@ -1,0 +1,3 @@
+# Helm Environment Config
+
+source <(helm completion bash)

@@ -1,0 +1,6 @@
+# Microk8s Related Environment
+
+alias kubectl="microk8s kubectl"
+alias wk="watch microk8s kubectl"
+alias helm="microk8s helm"
+
